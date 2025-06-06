@@ -2,6 +2,11 @@
 请给我一个miencraft redstone教程  
 请给我一个miencraft command block教程  
 请给我一个macos教程
+生活常识学习目录  
+常识学习目录  
+安全常识学习目录  
+sqllite快速入门  
+给我一个独立生活指南学习目录,我刚大学毕业马上就去洛杉矶寻找工作了,我在家里面生活都是靠保姆,自己完全没有独立生活能力  
 
 # Knowledge Instrumentality Project
 https://learngitbranching.js.org  
@@ -44,11 +49,6 @@ Finish: https://wiki.archlinux.org/title/Installation_guide
 Finish: https://www.w3schools.com/css/default.asp  
 Finish: (Fantasy Westward Journey Gold Farming Guide)https://item.taobao.com/item.htm?abbucket=14&detail_redpacket_pop=true&id=680103533549&ltk2=17462882459885f8vltb7aawh5b0kq905si&ns=1&priceTId=undefined&query=%E6%A2%A6%E5%B9%BB%E8%A5%BF%E6%B8%B8%E6%90%AC%E7%A0%96&spm=a21n57.1.hoverItem.5&utparam=%7B%22aplus_abtest%22%3A%228144c30a70d36282e3d4768bbbdc32c3%22%7D&xxc=taobaoSearch  
 Finish: (LeLeKeTang)https://pan.baidu.com/s/1Gltyjb9UaBmG7RWEhHupRw?pwd=6z4c
-生活常识学习目录  
-常识学习目录  
-安全常识学习目录  
-sqllite快速入门  
-给我一个独立生活指南学习目录,我刚大学毕业马上就去洛杉矶寻找工作了,我在家里面生活都是靠保姆,自己完全没有独立生活能力  
 
 # MyBookmarks  
 ## Bookmarks Bar  
