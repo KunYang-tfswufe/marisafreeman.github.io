@@ -51,13 +51,7 @@ Finish: (Fantasy Westward Journey Gold Farming Guide)https://item.taobao.com/ite
 Finish: (LeLeKeTang)https://pan.baidu.com/s/1Gltyjb9UaBmG7RWEhHupRw?pwd=6z4c
 
 # MyBookmarks  
-## Bookmarks Bar  
 https://asoftmurmur.com  
-https://github.com/marisafreeman/marisafreeman.github.io  
-file:///home/imak/Docker%20Deep%20Dive.pdf  
-https://aistudio.google.com  
-https://translate.google.com/?sl=en&tl=zh-CN&op=translate  
-## Bookmarks Other  
 https://www.befunky.com/create  
 https://api.v3.cm  
 https://proxy.888005.xyz  
