@@ -176,28 +176,32 @@ matches:
     replace: |-
       文中术语进行标准解释后举个简单的帮助我理解的现实生活中的例子(请简短一点每个标准解释和简单的例子分别不超过一句话,并且你只用解释你认为需要解释的术语)
 
-  - trigger: "`3"
+  - trigger: "`2"
     replace: |-
       我没有理解到,请帮我浓缩成极致简短的精华摘要.
 
-  - trigger: "`4"
+  - trigger: "`3"
     replace: |-
       没懂,请用一句话.像对初学者一样解释 [某个复杂概念]。
 
-  - trigger: "`5"
+  - trigger: "`4"
     replace: |-
       translate to Chinese：{{clipb}}
     vars:
       - name: "clipb"
         type: "clipboard"
 
-  - trigger: "`7"
+  - trigger: "`5"
     replace: |-
-      比较 [A] 和 [B] 的主要优缺点。
+      这英文单词是什么意思?为什么要这么取名,翻译成中文是什么?
+
+  - trigger: "`6"
+    replace: |-
+      比较 [A] 和 [B] 的主要优缺点。提供一份关于如何 [完成某项任务] 的分步指南。
 
   - trigger: "`7"
     replace: |-
-      这英文单词是什么意思?为什么要这么取名,翻译成中文是什么?
+      提供一份关于如何 [完成某项任务] 的分步指南。
 
   - trigger: "`8"
     replace: |-
