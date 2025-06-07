@@ -170,7 +170,7 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
 matches:
   - trigger: "`0"
     replace: |-
-      为一本关于<<minecraft redstone深入浅出>>的书设计一个详细的章节大纲。
+      为一本关于<<minecraft redstone深入浅出>>的书设计一个详细的章节大纲。[这是LLM给我的学习目录,请教我第一章：你好，红石！—— 红石系统导论 1.1 什么是红石信号？—— 能量的开与关]
 
   - trigger: "`1"
     replace: |-
