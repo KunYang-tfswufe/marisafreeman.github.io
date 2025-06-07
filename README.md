@@ -34,6 +34,7 @@ https://mybatis.org/mybatis-3/getting-started
 https://docs.github.com/get-started/quickstart/hello-world  
 https://docker-curriculum.com  
 https://youtube.com/watch?v=nPW6tKeapsM  
+https://www.youtube.com/watch?v=kCc8FmEb1nY  
 https://doc.rust-lang.org/book  
 https://developer.mozilla.org/en-US/docs/Web/HTTP  
 https://www.gimp.org/tutorials  
