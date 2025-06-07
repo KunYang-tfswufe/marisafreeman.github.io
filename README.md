@@ -168,50 +168,7 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
 # Espanso
 ```yaml
 matches:
-  - trigger: "`0"
-    replace: |-
-      为一本关于<<minecraft redstone深入浅出>>的书设计一个详细的章节大纲。------[粘贴前面生成的目录].这是LLM给我的学习目录,请教我第一章：你好，红石！—— 红石系统导论 1.1 什么是红石信号？—— 能量的开与关
-
   - trigger: "`1"
-    replace: |-
-      文中术语进行标准解释后举个简单的帮助我理解的现实生活中的例子(请简短一点每个标准解释和简单的例子分别不超过一句话,并且你只用解释你认为需要解释的术语)
-
-  - trigger: "`2"
-    replace: |-
-      我没有理解到,请帮我浓缩成极致简短的精华摘要.
-
-  - trigger: "`3"
-    replace: |-
-      没懂,请用一句话.像对初学者一样解释 [某个复杂概念]。
-
-  - trigger: "`4"
-    replace: |-
-      translate to Chinese：{{clipb}}
-    vars:
-      - name: "clipb"
-        type: "clipboard"
-
-  - trigger: "`5"
-    replace: |-
-      这英文单词是什么意思?为什么要这么取名,翻译成中文是什么?
-
-  - trigger: "`6"
-    replace: |-
-      比较 [A] 和 [B] 的主要优缺点。
-
-  - trigger: "`7"
-    replace: |-
-      提供一份关于如何 [完成某项任务] 的分步指南。
-
-  - trigger: "`8"
-    replace: |-
-      给每个xxx进行投入产出比和通用性评分,满分100,写成一个键值对.
-
-  - trigger: "`9"
-    replace: |-
-      从创建项目开始,逐步教我这个项目的开发(采用快速原型开发)先搭建基本的骨架实现最基础的功能,我使用arch linux.
-
-  - trigger: "`q"
     replace: |-
       # 角色
       你是一名 [专家角色，如：资深市场分析师]。
@@ -232,6 +189,45 @@ matches:
       - **格式**: [明确的格式，如：Markdown表格、JSON对象]。
       - **风格**: [简洁、专业、口语化等]。
       - **限制**: [其他任何限制，如：不超过200字]。
+
+  - trigger: "`2"
+    replace: |-
+      文中术语进行标准解释后举个简单的帮助我理解的现实生活中的例子(请简短一点每个标准解释和简单的例子分别不超过一句话,并且你只用解释你认为需要解释的术语)
+
+  - trigger: "`3"
+    replace: |-
+      我没有理解到,请帮我浓缩成极致简短的精华摘要.
+
+  - trigger: "`4"
+    replace: |-
+      没懂,请用一句话.像对初学者一样解释 [某个复杂概念]。
+
+  - trigger: "`5"
+    replace: |-
+      translate to Chinese：{{clipb}}
+    vars:
+      - name: "clipb"
+        type: "clipboard"
+
+  - trigger: "`6"
+    replace: |-
+      这英文单词是什么意思?为什么要这么取名,翻译成中文是什么?
+
+  - trigger: "`7"
+    replace: |-
+      提供一份关于如何 [完成某项任务] 的分步指南。
+
+  - trigger: "`8"
+    replace: |-
+      给每个xxx进行投入产出比和通用性评分,满分100,写成一个键值对.
+
+  - trigger: "`9"
+    replace: |-
+      从创建项目开始,逐步教我这个项目的开发(采用快速原型开发)先搭建基本的骨架实现最基础的功能,我使用arch linux.
+
+  - trigger: "`0"
+    replace: |-
+      为一本关于<<minecraft redstone深入浅出>>的书设计一个详细的章节大纲。------[粘贴前面生成的目录].这是LLM给我的学习目录,请教我第一章：你好，红石！—— 红石系统导论 1.1 什么是红石信号？—— 能量的开与关
 ```
 
 ```java
