@@ -170,7 +170,7 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
 matches:
   - trigger: "`0"
     replace: |-
-      请给我一个xxx的系统性学习目录
+      为一本关于<<minecraft redstone深入浅出>>的书设计一个详细的章节大纲。
 
   - trigger: "`1"
     replace: |-
