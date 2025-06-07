@@ -182,7 +182,7 @@ matches:
 
   - trigger: "`4"
     replace: |-
-      没懂,请换成一句话.
+      没懂,请用一句话.像对初学者一样解释 [某个复杂概念]。
 
   - trigger: "`5"
     replace: |-
