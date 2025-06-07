@@ -197,7 +197,7 @@ matches:
 
   - trigger: "`6"
     replace: |-
-      比较 [A] 和 [B] 的主要优缺点。提供一份关于如何 [完成某项任务] 的分步指南。
+      比较 [A] 和 [B] 的主要优缺点。
 
   - trigger: "`7"
     replace: |-
