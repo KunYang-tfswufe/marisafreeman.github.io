@@ -73,6 +73,8 @@ https://sorryios.com
 https://nf.video  
 https://xn--yfrp36ea9901a.com  
 https://lianjiajichang.net  
+https://wokwi.com  
+https://www.tinkercad.com  
 https://www.downloadnth.com/download.html  
 https://s3.amazonaws.com/psiphon/web/u1dy-me41-s9yv/en/download.html  
 https://web.telegram.org/a  
