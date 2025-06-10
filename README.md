@@ -174,25 +174,7 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
 matches:
   - trigger: "`1"
     replace: |-
-      # 角色
-      你是一名 [专家角色，如：资深市场分析师]。
       
-      # 背景 (策略2: 提供参考)
-      [在此处提供必要的背景信息、数据或示例]。
-      
-      # 任务 (策略1 & 3: 清晰指令 & 拆分任务)
-      你的任务是 [描述核心目标]。请遵循以下步骤：
-      1. **分析**: [任务的第一步]。
-      2. **执行**: [任务的第二步]。
-      3. **总结**: [任务的第三步]。
-      
-      # 思考 (策略4: 给予思考时间)
-      请先在内部进行一步步的思考，然后再给出最终答案。
-      
-      # 输出要求 (策略1: 清晰指令)
-      - **格式**: [明确的格式，如：Markdown表格、JSON对象]。
-      - **风格**: [简洁、专业、口语化等]。
-      - **限制**: [其他任何限制，如：不超过200字]。
 
   - trigger: "`2"
     replace: |-
@@ -204,7 +186,7 @@ matches:
 
   - trigger: "`4"
     replace: |-
-      请帮我上网搜索xxx(需要Gemini AIStudio右侧Run Settings面板启用Google Search功能)
+      请上网帮我搜索资料并完整的整理一份xxx的资料 | 请帮我上网搜索xxx(需要Gemini AIStudio右侧Run Settings面板启用Google Search功能)
 
   - trigger: "`5"
     replace: |-
