@@ -213,7 +213,7 @@ matches:
 
   - trigger: "`0"
     replace: |-
-      请用代码(例如svg | mermaidjs)画出xxx图片.
+      请用代码(例如svg | mermaidjs)画出xxx图像.
 ```
 
 ```python
