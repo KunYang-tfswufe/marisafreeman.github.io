@@ -204,7 +204,7 @@ matches:
 
   - trigger: "`4"
     replace: |-
-      听不懂,请进行标准讲解,并且举一个简单的生活中的例子帮我理解,分别不超过一句话.
+      请帮我上网搜索xxx(需要Gemini AIStudio右侧Run Settings面板启用Google Search功能)
 
   - trigger: "`5"
     replace: |-
