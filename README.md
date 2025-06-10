@@ -174,7 +174,7 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
 matches:
   - trigger: "`1"
     replace: |-
-      
+      请上网帮我搜索资料并完整的整理一份xxx的资料 | 请帮我上网搜索xxx(需要Gemini AIStudio右侧Run Settings面板启用Google Search功能)
 
   - trigger: "`2"
     replace: |-
@@ -186,7 +186,7 @@ matches:
 
   - trigger: "`4"
     replace: |-
-      请上网帮我搜索资料并完整的整理一份xxx的资料 | 请帮我上网搜索xxx(需要Gemini AIStudio右侧Run Settings面板启用Google Search功能)
+      这些术语为什么要取这个名字,请分别用一句话告诉我.
 
   - trigger: "`5"
     replace: |-
@@ -201,7 +201,7 @@ matches:
 
   - trigger: "`7"
     replace: |-
-      这些术语为什么要取这个名字,请分别用一句话告诉我.
+      请教我且从创建项目文件开始,逐步教我这个项目的开发(采用快速原型开发)先搭建基本的骨架实现最基础的功能,我使用arch linux.
 
   - trigger: "`8"
     replace: |-
@@ -209,11 +209,11 @@ matches:
 
   - trigger: "`9"
     replace: |-
-      请教我且从创建项目文件开始,逐步教我这个项目的开发(采用快速原型开发)先搭建基本的骨架实现最基础的功能,我使用arch linux.
+      为一本关于<<minecraft redstone深入浅出>>的书设计一个详细的章节大纲。------[粘贴前面生成的目录].这是LLM给我的学习目录,请教我第一章：你好，红石！—— 红石系统导论 1.1 什么是红石信号？—— 能量的开与关
 
   - trigger: "`0"
     replace: |-
-      为一本关于<<minecraft redstone深入浅出>>的书设计一个详细的章节大纲。------[粘贴前面生成的目录].这是LLM给我的学习目录,请教我第一章：你好，红石！—— 红石系统导论 1.1 什么是红石信号？—— 能量的开与关
+      暂无
 ```
 
 ```python
