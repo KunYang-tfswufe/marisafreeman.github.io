@@ -218,6 +218,15 @@ matches:
       请用代码(例如svg | mermaidjs)画出xxx图像.
 ```
 
+```bash
+#!/bin/sh
+# ~/.config/qtile/autostart.sh
+
+mihomo-party &
+fcitx5 &
+copyq &
+```
+
 ```python
 # ~/.config/qtile/config.py
 import os
