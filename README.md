@@ -1,4 +1,6 @@
 # LLM prompt
+列举多个高情商处理场景全部输出到数组  
+列举多个日常生活能接触到的工具并教我如何使用输出到数组  
 请给我一个miencraft redstone教程  
 请给我一个miencraft command block教程  
 请给我一个macos教程
