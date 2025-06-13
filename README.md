@@ -15,6 +15,8 @@
 
 ✓ DONE:
 [x] 完成天府论坛报告
+
+@ https://mega.nz/folder/S2x1zbKD#UvcYCWQXaljR5eJU2KNOng
 ```
 # LLM prompt
 列举多个高情商处理场景全部输出到数组  
