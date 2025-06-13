@@ -16,7 +16,7 @@
 ✓ DONE:
 [x] 完成天府论坛报告
 
-=> LINK:
+=> URL:
 https://mega.nz/folder/S2x1zbKD#UvcYCWQXaljR5eJU2KNOng
 ```
 # LLM prompt
