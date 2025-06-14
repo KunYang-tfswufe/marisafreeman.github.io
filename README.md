@@ -201,7 +201,7 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
 matches:
   - trigger: "`1"
     replace: |-
-      请上网帮我搜索资料并完整的整理一份xxx的资料 | 请帮我上网搜索xxx(需要Gemini AIStudio右侧Run Settings面板启用Google Search功能)
+      请上网帮我搜索资料并完整的整理一份xxx的资料 | 请帮我上网搜索xxx(需要Gemini AIStudio右侧Run Settings面板启用Google Search功能;Aistudio非常重要的特性,如果一个已经被分享(权限为所有人可访问)的Prompt,即使原Prompt被删除,依旧可是使用分享链接访问)
 
   - trigger: "`2"
     replace: |-
