@@ -19,6 +19,8 @@
 [ ] 学习archlinux手动安装(https://wiki.archlinux.org/title/Installation_guide)
 [ ] 学习qemu虚拟机(https://qemu.org)
 [ ] 补完Tinkercad(https://bilibili.com/video/BV1fK4y187jE?spm_id_from=333.788.videopod.episodes&vd_source=c2e06d1e2788a0a5e8c2b40d65f1f913&p=10)
+[ ] 学习FantasyWestwardJourneyGoldFarmingGuide搬砖(https://item.taobao.com/item.htm?abbucket=14&detail_redpacket_pop=true&id=680103533549&ltk2=17462882459885f8vltb7aawh5b0kq905si&ns=1&priceTId=undefined&query=%E6%A2%A6%E5%B9%BB%E8%A5%BF%E6%B8%B8%E6%90%AC%E7%A0%96&spm=a21n57.1.hoverItem.5&utparam=%7B%22aplus_abtest%22%3A%228144c30a70d36282e3d4768bbbdc32c3%22%7D&xxc=taobaoSearch)
+[ ] 学习mihomo-core(https://outstanding-value-42f.notion.site/Clash-Meta-25934f38fc1449f9b7e95c5ad194bff8    https://github.com/juewuy/ShellCrash)    
 
 ✓ DONE:
 [x] 完成天府论坛报告
@@ -70,10 +72,6 @@ https://doc.rust-lang.org/book
 https://developer.mozilla.org/en-US/docs/Web/HTTP  
 https://www.gimp.org/tutorials  
 https://javatpoint.com/gradle  
-
-# Todo List
-Finish: (mihomo-core)https://outstanding-value-42f.notion.site/Clash-Meta-25934f38fc1449f9b7e95c5ad194bff8    https://github.com/juewuy/ShellCrash    
-Finish: (Fantasy Westward Journey Gold Farming Guide)https://item.taobao.com/item.htm?abbucket=14&detail_redpacket_pop=true&id=680103533549&ltk2=17462882459885f8vltb7aawh5b0kq905si&ns=1&priceTId=undefined&query=%E6%A2%A6%E5%B9%BB%E8%A5%BF%E6%B8%B8%E6%90%AC%E7%A0%96&spm=a21n57.1.hoverItem.5&utparam=%7B%22aplus_abtest%22%3A%228144c30a70d36282e3d4768bbbdc32c3%22%7D&xxc=taobaoSearch  
 
 # MyBookmarks  
 https://asoftmurmur.com  
