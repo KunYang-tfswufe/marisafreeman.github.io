@@ -194,8 +194,8 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
   docker run -d --restart always -p 7000:7000 danielgatis/rembg s --host 0.0.0.0 --port 7000
 ```
 
-# Espanso
 ```yaml
+#
 matches:
   - trigger: "`1"
     replace: |-
