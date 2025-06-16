@@ -195,7 +195,7 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
 ```
 
 ```yaml
-#
+# ~/.config/espanso/match/base.yml
 matches:
   - trigger: "`1"
     replace: |-
