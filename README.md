@@ -76,7 +76,6 @@ https://javatpoint.com/gradle
 # MyBookmarks  
 https://asoftmurmur.com  
 https://www.befunky.com/create  
-https://api.v3.cm  
 https://proxy.888005.xyz  
 https://proxy.incolumitas.com/proxy_detect.html  
 https://sms-activate.org  
@@ -92,7 +91,6 @@ https://mermaidchart.com/play
 https://artificialanalysis.ai  
 https://civitai.com  
 https://sorryios.com  
-https://nf.video  
 https://xn--yfrp36ea9901a.com  
 https://lianjiajichang.net  
 https://wokwi.com  
