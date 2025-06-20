@@ -42,7 +42,7 @@ https://mega.nz/folder/S2x1zbKD#UvcYCWQXaljR5eJU2KNOng
 sqllite快速入门  
 给我一个独立生活指南学习目录,我刚大学毕业马上就去洛杉矶寻找工作了,我在家里面生活都是靠保姆,自己完全没有独立生活能力  
 制作一个简易计算机  
-常见的非专业实用基础医疗知识  
+常见的适合于普通人的实用医学知识    
 
 # Knowledge Instrumentality Project
 https://learngitbranching.js.org  
