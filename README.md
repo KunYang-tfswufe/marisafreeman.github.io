@@ -35,6 +35,7 @@ https://mega.nz/folder/S2x1zbKD#UvcYCWQXaljR5eJU2KNOng
 请给我一个miencraft command block教程  
 请给我一个macos教程
 生活常识学习目录  
+列举生活中常见的物理化学现象  
 列举需要知道的科普目录避免交智商税和上当受骗  
 常识学习目录  
 安全常识学习目录  
