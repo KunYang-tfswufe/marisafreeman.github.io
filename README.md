@@ -240,7 +240,7 @@ matches:
 
   - trigger: "`0"
     replace: |-
-      请用代码(例如svg | mermaidjs)画出xxx图像.我什么都不会只会用arduino uno点led灯,上课也没有听请快速教我需要解答这道题的前置知识:
+      请用代码(例如python | html | mermaidjs | svg)画出xxx图像.我什么都不会只会用arduino uno点led灯,上课也没有听请快速教我需要解答这道题的前置知识:
 
   - trigger: "`q"
     replace: |-
