@@ -114,6 +114,7 @@ https://github.com/massgravel/Microsoft-Activation-Scripts
 https://github.com/zyddnys/manga-image-translator  
 https://github.com/atuinsh/atuin  
 https://github.com/lewis6991/gitsigns.nvim  
+https://github.com/features/copilot  
 https://github.com/zaidka/cliget    https://addons.mozilla.org/firefox/addon/cliget  
 https://github.com/darkreader    https://addons.mozilla.org/firefox/addon/darkreader  
 https://github.com/AutomaApp    https://addons.mozilla.org/firefox/addon/automa  
