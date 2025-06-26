@@ -257,7 +257,12 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
       -display default,show-cursor=on \
       -usb \
       -device usb-tablet \
-      -device ich9-intel-hda -device hda-duplex
+      -device ich9-intel-hda -device hda-duplex \
+      -fsdev local,id=share1,path=/home/imak/qemu_share,security_model=passthrough \
+      -device virtio-9p-pci,fsdev=share1,mount_tag=host_share \
+      -device ich9-ahci,id=sata \
+      -device ide-cd,bus=sata.0,drive=cd-virtio \
+      -drive id=cd-virtio,if=none,media=cdrom,file=/var/lib/libvirt/images/virtio-win.iso
 # https://github.com/Mintplex-Labs/anything-llm
   docker pull mintplexlabs/anythingllm
   docker run -d --restart always -p 3001:3001 mintplexlabs/anythingllm  
