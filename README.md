@@ -187,7 +187,8 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
 # https://www.qemu.org
   sudo pacman -S qemu-full edk2-ovmf
   qemu-img create -f qcow2 alpine_vm.qcow2 10G
-  qemu-system-x86_64 \ # 首次安装命令
+# 首次安装命令:
+  qemu-system-x86_64 \
       -enable-kvm \
       -m 2G \
       -smp 2 \
@@ -199,7 +200,8 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
       -display default,show-cursor=on \
       -usb \
       -device usb-tablet
-  qemu-system-x86_64 \ # 日常使用命令
+  # 日常使用命令:
+  qemu-system-x86_64 \
       -enable-kvm \
       -m 2G \
       -smp 2 \
@@ -214,7 +216,8 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
   yay -S virtio-win
   qemu-img create -f qcow2 win10_vm.qcow2 64G
   cp /usr/share/edk2/x64/OVMF_VARS.4m.fd ./win10_vm_VARS.fd
-  qemu-system-x86_64 \ # 首次安装命令
+  # 首次安装命令:
+  qemu-system-x86_64 \
       -enable-kvm \
       -m 4G \
       -smp 4 \
@@ -237,7 +240,8 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
       -usb \
       -device usb-tablet \
       -device ich9-intel-hda -device hda-duplex
-  qemu-system-x86_64 \ # 日常使用命令
+  # 日常使用命令:
+  qemu-system-x86_64 \
       -enable-kvm \
       -m 4G \
       -smp 4 \
