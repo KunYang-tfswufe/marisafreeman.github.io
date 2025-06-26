@@ -187,6 +187,32 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
 # https://github.com/fish-shell/fish-shell
   sudo pacman -S fish
   chsh -s /usr/bin/fish
+# qemu
+  sudo pacman -S qemu-full edk2-ovmf
+  qemu-img create -f qcow2 alpine_vm.qcow2 10G
+# 确保你在同一目录下，或者为 ISO 和 qcow2 文件提供完整路径
+qemu-system-x86_64 \
+    -enable-kvm \
+    -m 2G \
+    -smp 2 \
+    -cpu host \
+    -hda alpine_vm.qcow2 \
+    -cdrom alpine-standard-3.22.0-x86_64.iso \
+    -boot d \
+    -vga virtio \
+    -display default,show-cursor=on \
+    -usb \
+    -device usb-tablet
+qemu-system-x86_64 \
+    -enable-kvm \
+    -m 2G \
+    -smp 2 \
+    -cpu host \
+    -hda alpine_vm.qcow2 \
+    -vga virtio \
+    -display default,show-cursor=on \
+    -usb \
+    -device usb-tablet
 ```
 
 ```bash
