@@ -251,7 +251,7 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
       -drive if=pflash,format=raw,file=win10_vm_VARS.fd \
       -device virtio-blk-pci,drive=disk0 \
       -drive id=disk0,if=none,format=qcow2,file=win10_vm.qcow2 \
-      -netdev user,id=n1,hostfwd=tcp::8888-:10.0.2.15:8000 \
+      -netdev user,id=n1,hostfwd=tcp::8888-:8000 \
       -device virtio-net-pci,netdev=n1 \
       -vga virtio \
       -display default,show-cursor=on \
