@@ -209,6 +209,51 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
       -display default,show-cursor=on \
       -usb \
       -device usb-tablet
+# windows10 version
+  sudo pacman -S qemu-full edk2-ovmf
+  yay -S virtio-win
+  qemu-img create -f qcow2 win10_vm.qcow2 64G
+  cp /usr/share/edk2/x64/OVMF_VARS.4m.fd ./win10_vm_VARS.fd
+  qemu-system-x86_64 \
+      -enable-kvm \
+      -m 4G \
+      -smp 4 \
+      -cpu host,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time \
+      -machine q35 \
+      -drive if=pflash,format=raw,readonly=on,file=/usr/share/edk2/x64/OVMF.4m.fd \
+      -drive if=pflash,format=raw,file=win10_vm_VARS.fd \
+      -device ich9-ahci,id=sata \
+      -device virtio-blk-pci,drive=disk0 \
+      -drive id=disk0,if=none,format=qcow2,file=win10_vm.qcow2 \
+      -device ide-cd,bus=sata.0,drive=cd-win \
+      -drive id=cd-win,if=none,media=cdrom,file=windows10.iso \
+      -device ide-cd,bus=sata.1,drive=cd-virtio \
+      -drive id=cd-virtio,if=none,media=cdrom,file=/var/lib/libvirt/images/virtio-win.iso \
+      -boot d \
+      -netdev user,id=n1 \
+      -device virtio-net-pci,netdev=n1 \
+      -vga virtio \
+      -display default,show-cursor=on \
+      -usb \
+      -device usb-tablet \
+      -device ich9-intel-hda -device hda-duplex
+  qemu-system-x86_64 \
+      -enable-kvm \
+      -m 4G \
+      -smp 4 \
+      -cpu host,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time \
+      -machine q35 \
+      -drive if=pflash,format=raw,readonly=on,file=/usr/share/edk2/x64/OVMF.4m.fd \
+      -drive if=pflash,format=raw,file=win10_vm_VARS.fd \
+      -device virtio-blk-pci,drive=disk0 \
+      -drive id=disk0,if=none,format=qcow2,file=win10_vm.qcow2 \
+      -netdev user,id=n1 \
+      -device virtio-net-pci,netdev=n1 \
+      -vga virtio \
+      -display default,show-cursor=on \
+      -usb \
+      -device usb-tablet \
+      -device ich9-intel-hda -device hda-duplex
 # https://github.com/Mintplex-Labs/anything-llm
   docker pull mintplexlabs/anythingllm
   docker run -d --restart always -p 3001:3001 mintplexlabs/anythingllm  
