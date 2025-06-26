@@ -125,11 +125,7 @@ https://github.com/Bistutu/FluentRead    https://addons.mozilla.org/zh-CN/firefo
 
 # yay
 ```bash
-sudo pacman -Syu
-sudo pacman -S git
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
+
 ```
 
 # Packages
@@ -174,6 +170,12 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
 ```
 
 ```bash
+# https://github.com/Jguer/yay/
+  sudo pacman -Syu
+  sudo pacman -S git
+  git clone https://aur.archlinux.org/yay.git
+  cd yay
+  makepkg -si
 # https://github.com/docker
   sudo pacman -S docker docker-compose    
   sudo systemctl start docker
@@ -212,9 +214,6 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
       -display default,show-cursor=on \
       -usb \
       -device usb-tablet
-```
-
-```bash
 # https://github.com/Mintplex-Labs/anything-llm
   docker pull mintplexlabs/anythingllm
   docker run -d --restart always -p 3001:3001 mintplexlabs/anythingllm  
