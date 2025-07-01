@@ -11,6 +11,7 @@
 ~ BACKGROUND:
 [ ] 整理桌面文件
 [ ] 学习新的Docker
+[ ] 申请github学生认证
 [ ] 学习机器学习
 [ ] 补完数据结构与算法(https://w3schools.com/dsa)
 [ ] 补完操作系统(https://tutorialspoint.com/operating_system)
