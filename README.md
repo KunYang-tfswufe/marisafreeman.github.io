@@ -158,7 +158,7 @@ sudo pacman -S okular    # https://okular.kde.org
 sudo pacman -S copyq    # https://github.com/hluk/CopyQ
 sudo pacman -S spectacle    # https://invent.kde.org/plasma/spectacle
 yay -S vagrant    # https://github.com/hashicorp/vagrant
-yay -S envycontrol    # https://github.com/bayasdev/envycontrol or yay -S optimus-manager-git https://github.com/Askannz/optimus-manager
+yay -S envycontrol    # https://github.com/bayasdev/envycontrol or https://github.com/Askannz/optimus-manager
 yay -S neovim-nightly-bin    # https://github.com/neovim/neovim
 yay -S zen-browser-bin    # https://github.com/zen-browser
 yay -S Ventoy-bin    # https://github.com/ventoy
