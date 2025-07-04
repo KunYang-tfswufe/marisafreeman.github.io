@@ -351,6 +351,7 @@ window-decoration = "none"
 ```bash
 #!/bin/sh
 # ~/.config/qtile/autostart.sh
+# chmod +x ~/.config/qtile/autostart.sh
 
 mihomo-party &
 fcitx5 &
