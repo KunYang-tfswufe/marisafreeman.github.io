@@ -342,6 +342,12 @@ matches:
 
 ```
 
+```toml
+# ~/.config/ghostty/config
+theme = "Pro"
+window-decoration = "none"
+```
+
 ```bash
 #!/bin/sh
 # ~/.config/qtile/autostart.sh
