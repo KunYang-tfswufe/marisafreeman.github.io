@@ -369,6 +369,8 @@ from libqtile.utils import guess_terminal
 mod = "mod4"
 terminal = "ghostty"
 
+screenshot_dir = os.path.expanduser('~/Pictures/screenshots/')
+
 keys = [
     Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
     Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
@@ -403,7 +405,28 @@ keys = [
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+
+    Key(["control", "shift", "mod1"], "l",
+        lazy.spawn("sh -c 'maim -s -u | xclip -selection clipboard -t image/png'"),
+        desc="Select region and copy to clipboard"
+    ),
+
+    Key([], "Print",
+        lazy.spawn("sh -c 'maim | xclip -selection clipboard -t image/png'"),
+        desc="Capture full screen and copy to clipboard"
+    ),
+
+    Key(["shift"], "Print",
+        lazy.spawn(f"sh -c 'mkdir -p {screenshot_dir} && maim {screenshot_dir}fullscreen-$(date +\"%Y-%m-%d-%H%M%S\").png'"),
+        desc="Capture full screen and save to file"
+    ),
+
+    Key(["control"], "Print",
+        lazy.spawn(f"sh -c 'mkdir -p {screenshot_dir} && maim -s -u {screenshot_dir}region-$(date +\"%Y-%m-%d-%H%M%S\").png'"),
+        desc="Select region and save to file"
+    ),
 ]
+
 for vt in range(1, 8):
     keys.append(
         Key(
@@ -459,7 +482,7 @@ screens = [
                     name_transform=lambda name: name.upper(),
                 ),
                 widget.TextBox("default config", name="default"),
-                widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
+                widget.TextBox("Press <M-r> to spawn", foreground="#d75f5f"),
                 widget.Systray(),
                 widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
                 widget.QuickExit(),
@@ -476,7 +499,7 @@ mouse = [
 ]
 
 dgroups_key_binder = None
-dgroups_app_rules = []  # type: list
+dgroups_app_rules = []
 follow_mouse_focus = True
 bring_front_click = False
 floats_kept_above = True
@@ -484,12 +507,12 @@ cursor_warp = False
 floating_layout = layout.Floating(
     float_rules=[
         *layout.Floating.default_float_rules,
-        Match(wm_class="confirmreset"),  # gitk
-        Match(wm_class="makebranch"),  # gitk
-        Match(wm_class="maketag"),  # gitk
-        Match(wm_class="ssh-askpass"),  # ssh-askpass
-        Match(title="branchdialog"),  # gitk
-        Match(title="pinentry"),  # GPG key password entry
+        Match(wm_class="confirmreset"),
+        Match(wm_class="makebranch"),
+        Match(wm_class="maketag"),
+        Match(wm_class="ssh-askpass"),
+        Match(title="branchdialog"),
+        Match(title="pinentry"),
     ]
 )
 auto_fullscreen = True
