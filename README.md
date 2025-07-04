@@ -219,52 +219,62 @@ yay -S rustdesk-bin    # https://github.com/rustdesk
   qemu-img create -f qcow2 win10_vm.qcow2 64G
   cp /usr/share/edk2/x64/OVMF_VARS.4m.fd ./win10_vm_VARS.fd
   # 首次安装命令:
-  qemu-system-x86_64 \
-      -enable-kvm \
-      -m 4G \
-      -smp 4 \
-      -cpu host,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time \
-      -machine q35 \
-      -drive if=pflash,format=raw,readonly=on,file=/usr/share/edk2/x64/OVMF.4m.fd \
-      -drive if=pflash,format=raw,file=win10_vm_VARS.fd \
-      -device ich9-ahci,id=sata \
-      -device virtio-blk-pci,drive=disk0 \
-      -drive id=disk0,if=none,format=qcow2,file=win10_vm.qcow2 \
-      -device ide-cd,bus=sata.0,drive=cd-win \
-      -drive id=cd-win,if=none,media=cdrom,file=windows10.iso \
-      -device ide-cd,bus=sata.1,drive=cd-virtio \
-      -drive id=cd-virtio,if=none,media=cdrom,file=/var/lib/libvirt/images/virtio-win.iso \
-      -boot d \
-      -netdev user,id=n1 \
-      -device virtio-net-pci,netdev=n1 \
-      -vga virtio \
-      -display default,show-cursor=on \
-      -usb \
-      -device usb-tablet \
-      -device ich9-intel-hda -device hda-duplex
+qemu-system-x86_64 \
+    -enable-kvm \
+    -m 8G \
+    -cpu host,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time,kvm=off \
+    -smp 8,sockets=1,cores=4,threads=2 \
+    -machine q35,accel=kvm \
+    -drive if=pflash,format=raw,readonly=on,file=/usr/share/edk2/x64/OVMF.4m.fd \
+    -drive if=pflash,format=raw,file=win10_vm_VARS.fd \
+    -device virtio-scsi-pci,id=scsi0 \
+    -device scsi-hd,drive=disk0,bus=scsi0.0 \
+    -drive id=disk0,if=none,format=qcow2,file=win10_vm.qcow2,cache=none,discard=unmap \
+    -device ich9-ahci,id=sata \
+    -device ide-cd,bus=sata.0,drive=cd-win \
+    -drive id=cd-win,if=none,media=cdrom,file=windows10.iso \
+    -device ide-cd,bus=sata.1,drive=cd-virtio \
+    -drive id=cd-virtio,if=none,media=cdrom,file=/var/lib/libvirt/images/virtio-win.iso \
+    -boot d \
+    -vga virtio \
+    -display sdl,gl=on \
+    -netdev user,id=n1 \
+    -device virtio-net-pci,netdev=n1 \
+    -audiodev pa,id=pa1,server=/run/user/1000/pulse/native \
+    -device ich9-intel-hda \
+    -device hda-duplex,audiodev=pa1 \
+    -usb \
+    -device usb-tablet \
+    -device virtio-rng-pci \
+    -parallel none \
+    -serial none
   # 日常使用命令:
-  qemu-system-x86_64 \
-      -enable-kvm \
-      -m 4G \
-      -smp 4 \
-      -cpu host,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time \
-      -machine q35 \
-      -drive if=pflash,format=raw,readonly=on,file=/usr/share/edk2/x64/OVMF.4m.fd \
-      -drive if=pflash,format=raw,file=win10_vm_VARS.fd \
-      -device virtio-blk-pci,drive=disk0 \
-      -drive id=disk0,if=none,format=qcow2,file=win10_vm.qcow2 \
-      -netdev user,id=n1,hostfwd=tcp::8888-:8000 \
-      -device virtio-net-pci,netdev=n1 \
-      -vga virtio \
-      -display default,show-cursor=on \
-      -usb \
-      -device usb-tablet \
-      -device ich9-intel-hda -device hda-duplex \
-      -fsdev local,id=share1,path=/home/imak/qemu_share,security_model=passthrough \
-      -device virtio-9p-pci,fsdev=share1,mount_tag=host_share \
-      -device ich9-ahci,id=sata \
-      -device ide-cd,bus=sata.0,drive=cd-virtio \
-      -drive id=cd-virtio,if=none,media=cdrom,file=/var/lib/libvirt/images/virtio-win.iso
+qemu-system-x86_64 \
+    -enable-kvm \
+    -m 8G \
+    -cpu host,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time,kvm=off \
+    -smp 8,sockets=1,cores=4,threads=2 \
+    -machine q35,accel=kvm \
+    -drive if=pflash,format=raw,readonly=on,file=/usr/share/edk2/x64/OVMF.4m.fd \
+    -drive if=pflash,format=raw,file=win10_vm_VARS.fd \
+    -device virtio-scsi-pci,id=scsi0 \
+    -device scsi-hd,drive=disk0,bus=scsi0.0,bootindex=1 \
+    -drive id=disk0,if=none,format=qcow2,file=win10_vm.qcow2,cache=none,discard=unmap \
+    -device ich9-ahci,id=sata \
+    -device ide-cd,bus=sata.0,drive=cd-virtio \
+    -drive id=cd-virtio,if=none,media=cdrom,file=/var/lib/libvirt/images/virtio-win.iso \
+    -vga virtio \
+    -display sdl,gl=on \
+    -netdev user,id=n1,hostfwd=tcp::8888-:8000 \
+    -device virtio-net-pci,netdev=n1 \
+    -audiodev pa,id=pa1,server=/run/user/1000/pulse/native \
+    -device ich9-intel-hda \
+    -device hda-duplex,audiodev=pa1 \
+    -usb \
+    -device usb-tablet \
+    -device virtio-rng-pci \
+    -parallel none \
+    -serial none
 # https://github.com/Mintplex-Labs/anything-llm
   docker pull mintplexlabs/anythingllm
   docker run -d --restart always -p 3001:3001 mintplexlabs/anythingllm  
