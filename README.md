@@ -51,6 +51,8 @@ sqllite快速入门
 学习自动化脚本  
 学习逆向工程  
 学习渗透测试  
+学习网络数据包嗅探  
+学习越狱和Root  
 
 # Knowledge Instrumentality Project
 https://learngitbranching.js.org  
