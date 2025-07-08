@@ -47,6 +47,9 @@ sqllite快速入门
 常见的适合于普通人的实用医学知识   
 理解经度纬度  
 常见的文件后缀有哪些？它们这么取名字的内涵是什么？  
+学习网络爬虫  
+学习自动化脚本  
+学习逆向工程  
 
 # Knowledge Instrumentality Project
 https://learngitbranching.js.org  
