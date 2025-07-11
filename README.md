@@ -1,6 +1,7 @@
 ```
 > RUNNING:
 [ ] 完成课堂作业
+[ ] 使用Github Copilot来理解开源项目
 
 >> READY:
 [ ] 完成期末作业
@@ -30,6 +31,7 @@
 https://mega.nz/folder/S2x1zbKD#UvcYCWQXaljR5eJU2KNOng
 ```
 # Hello LLM
+使用Github Copilot来理解开源项目  
 列举多个高情商处理场景全部输出到数组  
 列举多个日常生活能接触到的工具并教我如何使用输出到数组  
 请给我一个miencraft redstone教程  
