@@ -105,7 +105,7 @@ https://mermaidchart.com/play
 https://artificialanalysis.ai  
 https://civitai.com  
 https://sorryios.com  
-https://shop.edumails.org/buy/107
+https://shop.edumails.org/buy/107  
 https://xn--yfrp36ea9901a.com  
 https://lianjiajichang.net  
 https://wokwi.com  
